@@ -1,0 +1,24 @@
+{
+    "name": "magedip/module-helloworld",
+    "description": "A basic Magento 2 module example",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "MageDip",
+            "email": "support@magedip.com"
+        }
+    ],
+    "require": {
+        "php": "~7.4.0||~8.3.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "MageDip\\Helloworld\\": ""
+        }
+    }
+}
