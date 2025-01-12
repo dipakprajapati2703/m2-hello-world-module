@@ -1,0 +1,11 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \MageDip\Helloworld\ViewModel\ExampleViewModel $viewModel */
+$viewModel = $block->getData('view_model');
+?>
+
+<?php if ($viewModel->getTitle()): ?>
+    <div class="view-model-info">
+        <h2><?= $block->escapeHtml($viewModel->getTitle()) ?></h2>
+    </div>
+<?php endif; ?>
